@@ -131,3 +131,67 @@ var a = 10
 var b = 3
 
 console.log(a * (b - 2))
+
+
+//Un Familier Operator
+
+//++ , --
+
+// Post increment/decrement
+// number++
+// number--
+
+// pre increment/decrement
+// ++number
+// --number
+
+//console.log(number)
+
+// jiske aage ++/-- lagega wohi variable update hoga.
+// post mein phele variable ko value assign ho gi phir update ho gi.
+// pre  mein phele variable update hoga phir value assign hogi.    
+
+
+// Post increment
+
+var pNum = 10
+var pNewNum = pNum++
+
+console.log(pNum)
+console.log(pNewNum)
+
+
+//Post decrement
+
+var pNum = 10
+var pNewNum = pNum--
+
+console.log(pNum)
+console.log(pNewNum)
+
+
+//pre increment
+
+var prNum = 10
+var prdNewNum = ++prNum
+
+console.log(prNum)
+console.log(prdNewNum)
+
+var prNum = 10
+var prdNewNum = --prNum
+
+console.log(prNum)
+console.log(prdNewNum)
+
+
+var abc = 10
+
+// console.log(abc++)
+// console.log(abc++)
+// console.log(abc)
+// console.log(abc++)
+// console.log(abc++)
+// console.log(--abc)
+// console.log(--abc)
+console.log(abc--)
