@@ -286,3 +286,30 @@
 // else{
 //     document.write(`<h1>invalid</h1>`)
 // }
+
+
+
+var mark1 = +prompt("Enter marks for subject 1:")
+var mark2 = +prompt("Enter mark for subject 2:")
+var mark3 = +prompt("Enter mark for subject 3:")
+
+const average = (mark1 + mark2 + mark3) / 3;
+
+if (average >= 90){
+    grade = `A`;
+}
+else if(average >= 80){
+    grade = `B`;
+}
+else if(average >= 70){
+    grade = `C`;
+}
+else if(average >= 60){
+    grade = `E`;
+}
+else {
+    grade = `F`;
+}
+
+alert(`Your average is: ${average}`);
+alert(`Your grade is: ${grade}`);
