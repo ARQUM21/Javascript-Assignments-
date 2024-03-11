@@ -289,27 +289,66 @@
 
 
 
-var mark1 = +prompt("Enter marks for subject 1:")
-var mark2 = +prompt("Enter mark for subject 2:")
-var mark3 = +prompt("Enter mark for subject 3:")
 
-const average = (mark1 + mark2 + mark3) / 3;
 
-if (average >= 90){
-    grade = `A`;
-}
-else if(average >= 80){
-    grade = `B`;
-}
-else if(average >= 70){
-    grade = `C`;
-}
-else if(average >= 60){
-    grade = `E`;
-}
-else {
-    grade = `F`;
-}
+// Q17
 
-alert(`Your average is: ${average}`);
-alert(`Your grade is: ${grade}`);
+// var mark1 = +prompt("Enter marks for subject 1:")
+// var mark2 = +prompt("Enter mark for subject 2:")
+// var mark3 = +prompt("Enter mark for subject 3:")
+
+// const average = (mark1 + mark2 + mark3) / 3;
+
+// if (average >= 90){
+//     grade = `A`;
+// }
+// else if(average >= 80){
+//     grade = `B`;
+// }
+// else if(average >= 70){
+//     grade = `C`;
+// }
+// else if(average >= 60){
+//     grade = `E`;
+// }
+// else {
+//     grade = `F`;
+// }
+
+// alert(`Your average is: ${average}`);
+// alert(`Your grade is: ${grade}`);
+
+
+
+
+// Q18
+
+// var celsius = +prompt("Enter a temperature in Celsius: ");
+
+// function celsiusToFahrenheit(celsius) {
+//   return (celsius * 9 / 5) + 32;
+// }
+
+// var fahrenheit = celsiusToFahrenheit(celsius);
+
+// alert(`${celsius}°C is equal to ${fahrenheit}°F`);
+
+
+
+
+// Q19
+
+// var character = prompt("Enter a character:");
+
+// const vowels = ['a', 'e', 'i', 'o', 'u'];
+
+// if (vowels.includes(character)){
+//     console.log("Vowel");
+// }
+// else if ("[a-zA-Z]"){
+//     console.log("Consonant");
+// }
+// else {
+//     consolr.log("Not a letter");
+// }
+
