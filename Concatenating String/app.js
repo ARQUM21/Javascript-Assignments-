@@ -30,11 +30,3 @@ document.write(`<li> ${tableNumber} x ${++tdNum} =  ${tableNumber * ++tNum} </li
 document.write(`<li> ${tableNumber} x ${++tdNum} =  ${tableNumber * ++tNum} </li>`)
 document.write(`<li> ${tableNumber} x ${++tdNum} =  ${tableNumber * ++tNum} </li>`)
 
-// var tableNumber = 4
-// var tNum  = 11
-// var tdNum = 11
-
-// document.write('<h5> ${tableNumber} ka table </h5>')
-// document.write('<li> ${tablenumber} * ${tdNum} = ${tableNumbber * tNum} <li>')
-// document,write('<li> ${tableNumber} * ${++tdnum} = ${tableNumber * ++tNum} <li> ')
-// document.write('<li> ${tableNumber} * ${++tdNum} = ${tableNumber * ++tNum <li>')

@@ -352,3 +352,17 @@
 //     consolr.log("Not a letter");
 // }
 
+
+
+// Q20
+
+var num1 = +prompt("Add a number");
+var num = +prompt("Add table Number");
+
+var remainder = num1 % num;
+if (remainder == 0){
+    document.write(num1 + "is divide by " + num);
+}
+else{
+    document.write(`${num1} is not divide by ${num}`)
+}
