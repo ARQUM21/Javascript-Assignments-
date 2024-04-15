@@ -169,23 +169,68 @@
                                                 // * Nested Loop * //
 
 
-var userPrizeBond = [234, 235, 236, 237, 238, 323, 21, 313, 434, 124, 360];
-var prizeBondWinner = [112, 152, 190, 201, 220, 236, 238, 250, 285, 310, 315, 320, 341, 124, 355, 380, 400];
-var userWon = [];
+// var userPrizeBond = [234, 235, 236, 237, 238, 323, 21, 313, 434, 124, 360];
+// var prizeBondWinner = [112, 152, 190, 201, 220, 236, 238, 250, 285, 310, 315, 320, 341, 124, 355, 380, 400];
+// var userWon = [];
 
-for (var i = 0; i < userPrizeBond.length; i++){
-    for(var j = 0; j < prizeBondWinner.length; j++){
-        console.log(userPrizeBond[i],prizeBondWinner[j],userPrizeBond[i] === prizeBondWinner[j]);
+// for (var i = 0; i < userPrizeBond.length; i++){
+//     for(var j = 0; j < prizeBondWinner.length; j++){
+//         console.log(userPrizeBond[i],prizeBondWinner[j],userPrizeBond[i] === prizeBondWinner[j]);
 
-        if(userPrizeBond[i] === prizeBondWinner[j]);{
-        userWon.push(userPrizeBond[i]);
-    }
+//         if(userPrizeBond[i] === prizeBondWinner[j]);{
+//         userWon.push(userPrizeBond[i]);
+//     }
         
-    }
+//     }
+// }
+// console.log("Prize bond ye nikla hen", userWon);
+
+
+
+// var students1 = ["Ahmed", "Abdul", "Bilal", "Raza", "Haris", "Arqum"];
+// var students2 = ["hassan", "Tabish", "Usman", "Abdul", "Ahsan", "Hamza", "Bilal"];
+// var duplication = []
+
+// for (var i = 0; i < students1.length; i++){
+//     for(var j = 0; j < students2.length; j++){
+//         if(students1[i] === students2[j]){
+//             duplication.push(students1[i])
+//         }
+//     }
+// }
+// console.log("These names are in both list", duplication)
+
+
+
+
+  // * Hashes * //
+
+// var rows = prompt("Rows");
+// var col = prompt("col");
+
+// for (var i = 0; i < rows; i++){
+//     var Hashes = "";
+//     for (var j = 0; j < col; j++){
+//         Hashes = Hashes + "#";
+//     }
+//     document.write(Hashes + "<br>");
+// }
+
+
+var firstName = ["bilal", "arqum", "raza", "ahemd", "hamza", "Anas"];
+var lastName = ["raza", "tariq", "ahmed", "raza", "jawaid", "hadi"];
+var fullNames = [];
+
+for (var i = 0; i < firstName.length; i++){
+    var fullName = firstName[i] + " " + lastName[i];
+    fullNames.push(fullName);
 }
-console.log("Prize bond ye nikla hen", userWon);
+console.log(fullNames);
 
 
+// var string = "Saylani Welfare";
+// console.log(string.length);
+// console.log(string[2]);
 
 
 
