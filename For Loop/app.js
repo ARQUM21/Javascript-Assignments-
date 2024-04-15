@@ -145,6 +145,46 @@
 
 
 
+// var karachiKeAlaqa = ["Saddar", "Shah Faisal", "Gulshan", "Korangi", "DHA", "Nazimabad", "Maleer", "Hyderi"];
+// var userElaqa = prompt ("App ka home kaha hn");
+// var deliveryAvailable = false;
+
+// for(var i = 0; i < karachiKeAlaqa.length ; i++){
+
+//     if(karachiKeAlaqa[i] === userElaqa){
+
+//     deliveryAvailable = true;
+//     document.write("Delivery Available")
+//     break;
+//     }
+// }
+
+// if(!deliveryAvailable){
+//     document.write("Delivery Not Available");
+// }
+
+
+
+
+                                                // * Nested Loop * //
+
+
+var userPrizeBond = [234, 235, 236, 237, 238, 323, 21, 313, 434, 124, 360];
+var prizeBondWinner = [112, 152, 190, 201, 220, 236, 238, 250, 285, 310, 315, 320, 341, 124, 355, 380, 400];
+var userWon = [];
+
+for (var i = 0; i < userPrizeBond.length; i++){
+    for(var j = 0; j < prizeBondWinner.length; j++){
+        console.log(userPrizeBond[i],prizeBondWinner[j],userPrizeBond[i] === prizeBondWinner[j]);
+
+        if(userPrizeBond[i] === prizeBondWinner[j]);{
+        userWon.push(userPrizeBond[i]);
+    }
+        
+    }
+}
+console.log("Prize bond ye nikla hen", userWon);
+
 
 
 
