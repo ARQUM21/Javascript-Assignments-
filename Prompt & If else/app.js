@@ -349,7 +349,7 @@
 //     console.log("Consonant");
 // }
 // else {
-//     consolr.log("Not a letter");
+//     console.log("Not a letter");
 // }
 
 
