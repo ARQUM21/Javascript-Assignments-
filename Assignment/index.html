@@ -8,7 +8,32 @@
 <body>
     
     <h1>Assignment</h1>
+    <style>
+        .box{
+            background-color: aqua;
+            height: 300px;
+            width: 700px;
+            margin: 0px auto;
+            cursor: pointer;
+        }
+        .colorbox{
+            height: 60px;
+            width: 60px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
 
+     <div class="box" id = "box"></div>
+
+     <div style="display: flex; justify-content: center; align-items: center; margin: 0px auto;">
+     <div onmouseover="changered()" class="colorbox" style="background-color: red;"></div>
+     <div onmouseover="changeorange()" class="colorbox" style="background-color: orange;"></div>
+     <div onmouseover="changeblue()" class="colorbox" style="background-color: blue;"></div>
+     <div onmouseover="changeblack()" class="colorbox" style="background-color: black;" ></div>
+     <div onmouseover="changeyellow()" class="colorbox" style="background-color: yellow;"></div>
+    </div>
+      
     <script src="app.js"></script>
 </body>
 </html>

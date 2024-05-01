@@ -65,6 +65,54 @@
 // console.log(sentence.lastIndexOf("document"));
 
 
+//Q7
+
+// var sentence = "javascript is wonderful programming languuage";
+
+// var vowelcount = 0;
+// var constcount = 0;
+
+// for(var i = 0; i < sentence.length; i++ ){
+//     if(sentence[i].toLowerCase() === "a" || sentence[i].toLowerCase === "e" || sentence.toLowerCase === "i" || sentence.toLowerCase === "o" || sentence.toLowerCase === "u"){
+//     vowelcount ++;
+// }
+// else if (sentence[i] !== " "){
+//     constcount ++;
+
+// }
+// }
+
+// var vowels = ["a","e", "i", "o", "u"];
+
+// for (let i = 0 ; i < sentence.length ; i++){
+//     var vowelfound = false;
+
+// for (let j = 0; j < sentence.length; j++){
+//     if (sentence[i].toLowerCase() === vowels[j]){
+//     vowelfound = true;
+
+//     break;
+// }    
+// }
+
+// if (vowelfound) vowelcount ++ ;
+// if (!vowelfound && sentence[i] !== " " ) constcount++;
+// }
+
+// console.log ("vowelscount->", vowelcount);
+// console.log ("constcont->", constcount);
+
+
+//Q8 Count the number of letter a used in sentence.
+
+var sentence = "javascript is wonderful programming languuage";
+var count  = 0
+for (var i = 0 ; i < sentence.length ; i++){
+    if (sentence.charAt(i).toLowerCase() === "A") count++;
+}
+console.log("Number A in this sentence are", count);
+
+
 //charAt
 
 // var username = "Arqum";
@@ -89,6 +137,6 @@
 
 //trim
 
-var email = "  marqum029@gmail.com  ";
-console.log(email+ "---> " + email.length);
-console.log("trim--> "+ email + "---> " + email.trim().length);
+// var email = "  marqum029@gmail.com  ";
+// console.log(email+ "---> " + email.length);
+// console.log("trim--> "+ email + "---> " + email.trim().length);
