@@ -4,12 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Numbers</title>
+    <link rel="stylesheet" href="style.css" >
 </head>
 <body>
-    <h1>Numbers</h1>
+    <!-- <h1>Numbers</h1> -->
 
-    <h1 id="random" >Random Number</h1>
+    <!-- <h1 id="random" >Random Number</h1>
     <button onclick="generateOTPNumber()">generateOTPNumber</button>
+
+    <h1 id="password">password</h1>
+    <button onclick="generatepassword()">GeneratePassword</button> -->
+
+
+
+    <!-- dice -->
+    
+    <h1>DICE GAME</h1>
+    <h3 id = "msg" class="msg"></h3>
+    <div class="container ">
+        <div onclick="trymyluck(1)" class="box">1</div>
+        <div onclick="trymyluck(2)" class="box">2</div>
+        <div onclick="trymyluck(3)" class="box">3</div>
+        <div onclick="trymyluck(4)" class="box">4</div>
+        <div onclick="trymyluck(5)" class="box">5</div>
+        <div onclick="trymyluck(6)" class="box">6</div>
+    </div>
+
+    <div class="container ">
+        <div class="info_box"> <b>USERNUMBER :</b> <span id="user_number"></span> </div>
+        <div class="info_box"> <b>RANDOMNUMBER :</b> <span id="Random_number">3</span></div>
+        <div class="info_box"  id="info_box_result"> <b id="result">you lose / you win </b></div>
+    </div>
+
+    <div class="container">
+        <div class="info_box"><b>turns :</b><span id="total">10</span></div>
+        <div class="info_box"><b>win :</b><span id="win">0</span></div>
+        <div class="info_box"><b>loss  :</b><span id="loss">0</span></div>
+    
+    </div>
+
+ 
+
+
+
+
+
 
     <script src="app.js"></script>
 </body>
