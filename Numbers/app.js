@@ -1,17 +1,17 @@
 //*Round*//
 
-var number = 5.0
-console.log(Math.round(number));
+// var number = 5.0
+// console.log(Math.round(number));
 
 //*floor*//
 
-var number = 2.3
-console.log(Math.floor(number));
+// var number = 2.8
+// console.log(Math.floor(number));
 
 //*ceil*//
 
-var number = 4.6
-console.log(Math.ceil(number));
+// var number = 4.4
+// console.log(Math.ceil(number));
 
 
 //string ko number me convert krna
@@ -23,9 +23,18 @@ console.log(Math.ceil(number));
 // console.log(typeof number);
 // console.log(typeof number.toString());
 
-var price = "340a45.4";
-console.log("parseInt", parseFloat(price));
+// var price = "340245.4";
+// console.log("parseInt", parseInt(price));
 
 //decimal ki length ko control krne ke liye
-var divide = 10 / 3;
-console.log(divide.toFixed(2));
+// var divide = 10 / 3;
+// console.log(Math.round(divide));
+
+
+
+var heading = document.getElementById("random");
+function generateOTPNumber() {
+    
+    var random = Math.round(Math.random() * 10000);
+    heading.innerText = random;
+}
