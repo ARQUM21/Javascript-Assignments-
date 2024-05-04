@@ -32,6 +32,9 @@ console.log(Math.round(divide));
 
 
 
+
+//generate OTP
+
 var heading = document.getElementById("random");
 function generateOTPNumber() {
     
@@ -39,6 +42,9 @@ function generateOTPNumber() {
     heading.innerText = random;
 }
 
+
+
+//Generate Password
 
 var string = "ABCDEF1234567sqwrtyuiopsghjklzxvnm";
 var password_h1 = document.getElementById("password");
