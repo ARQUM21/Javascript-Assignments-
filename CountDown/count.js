@@ -15,3 +15,5 @@ var target_mili_sec = new Date("jun 17, 2024 12:00:00").getTime();
           }
 
           setInterval(timer, 1000); //1000 it means 1 sec
+
+
