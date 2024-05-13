@@ -12,10 +12,7 @@ video{
     position: fixed;
 }
 
-body {
-    background:url();
-    background-size: cover;
-}
+
 
 .container {
     background: rgba(0,0,0, .5);
@@ -35,17 +32,17 @@ body {
 .timer-display {
     position: relative;
     width: 92%;
-    background: #fff;
+    background: rgba(0,0,0, .5);
     left: 4%;
     font-family: 'Roboto mono', monospace;
-    color: #8c52ff;
+    color: white;
     font-size: 30px;
     padding: 40px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     border-radius: 5px;
-    box-shadow: 0 0 20px rgba(65, 5, 145, 0.25);
+    box-shadow: rgb(255, 255, 255) 0px 2px 4px 0px, rgba(255, 255, 255, 0.97) 0px 2px 16px 0px;
 }
 
 .buttons {
@@ -55,10 +52,10 @@ body {
     justify-content: space-around;
 }
 
-.buttons button {
+.S {
     width: 120px;
     height: 45px;
-    background-color: #8c52ff;
+    background: rgba(81, 255, 0, 0.5);
     color: #fff;
     border: none;
     font-family: 'Poppins', sans-serif;
@@ -67,15 +64,49 @@ body {
     cursor: pointer;
     outline: none;
 }
-
-.buttons button:nth-last-child(2) {
-    background-color: #e35209;
+.S:hover{
+    color:  black;        
+    background: #51ff0080;
+    box-shadow: 0 0 10px  #51ff0080, 0 0 40px #51ff0080, 0 0 80px  #51ff0080;;
+    transition-delay: 0.1s;
 }
 
-.buttons button:nth-last-child(1) {
-    background-color: #f7df1e;
+.P{
+    width: 120px;
+    height: 45px;
+    background: rgba(255, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    
+} 
+.P:hover{
+    color:  black;        
+    background: #ff0000;
+    box-shadow: 0 0 10px  #FF0000, 0 0 40px #FF0000, 0 0 80px #FF0000;
+    transition-delay: 0.1s;
+}
+.R{
+    width: 120px;
+    height: 45px;
+    background: rgba(255, 255, 0, 0.5);
+    color: #fff;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+} 
+
+.R:hover{
+    color:  black;        
+    background: #FFFF00;
+    box-shadow: 0 0 10px  #FFFF00, 0 0 40px #FFFF00, 0 0 80px #FFFF00;
+    transition-delay: 0.1s;
 }
 
-.buttons button:hover {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
-}
