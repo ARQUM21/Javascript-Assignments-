@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" >
+  </head>
+  <body>
+    <div id="login_container">
+     
+      <img class="wave" src="../images/wave.png">
+      <div class="container">
+          <div class="img">
+              <img src="../images/bg.svg">
+          </div>
+          <div class="login-content">
+              <form action="index.html">
+                  <img src="https://i.pinimg.com/564x/7e/05/70/7e0570da0f3fcef0832ea3bc82eb41b1.jpg">
+                  <h2 class="title">Welcome</h2>
+                     <div class="input-div one">
+                        <div class="i">
+                                <i class="fas fa-user"></i>
+                        </div>
+                        <div class="div">
+                                
+                                <input type="text" id="email" class="input" placeholder="Email">
+                        </div>
+                     </div>
+                     <div class="input-div pass">
+                        <div class="i"> 
+                             <i class="fas fa-lock"></i>
+                        </div>
+                        <div class="div">
+                            
+                             <input type="password" id="password" class="input" placeholder="Password">
+                     </div>
+                  </div>
+                  <a href="#">Forgot Password?</a>
+                  <button
+                onclick="loginUser()"
+                class="btn"
+              >
+                Sign in
+              </button>
+                  
+              </form>
+          </div>
+      </div>
+
+    </div>
+
+    <div id="home_container">
+      <div class="flex justify-between p-10">
+        <h1>Hello, Good Morning</h1>
+        <span class="flex">
+          <p class="px-3" id="user_email"></p>
+          <button class="logout" onclick="logout()">Logout</button>
+        </span>
+      </div>
+
+      <div class="p-10">
+        <div>
+          <textarea class="border p-4 w-full" id="note" rows="5" placeholder="add your notes">
+</textarea>
+          <div>
+            <button
+              onclick="submitNote()"
+              class="btn bg-blue-600 py-2 px-3 rounded text-white"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+
+        <ul id="list"></ul>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+

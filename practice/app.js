@@ -182,3 +182,117 @@
 
 
 
+//mutable and immutable//
+
+//mutable can be update and immutable canot be update
+
+// var string = "hello world" //immutable
+
+// string[0] = "H"
+
+// string = string.replace("h" , "H")
+
+// console.log(string)
+
+// var array = ["1", "2", "3" , "4"] //mutable
+
+// array.push(5);
+ 
+// console.log(array)
+
+
+// var obj = {
+//     name:"Arqum",
+// };
+
+// obj.name = "Arqum Tariq"
+
+// console.log(obj)
+
+
+// var a = "hello"
+// var b = a;
+
+// a = "hello world!"
+
+// console.log("A=>",a)
+// console.log("B=>",b)
+
+
+// var c = 100;
+// var d = c;
+
+// d = 90;
+
+// console.log("C=>", c)
+// console.log("D=>", d)
+
+
+// var obj1 = {
+//     name: "Arqum",
+// };
+
+//  var  obj2 = obj1;
+
+// obj1.name = "Arqum Tariq";
+
+// console.log("OBJ1=>",obj1)
+// console.log("OBJ2=>",obj2)
+
+
+// var todos = [
+//     {todo: "chai peni hn", isDone: false },
+//     {todo: "office jana hn", isDone: false },
+//     {todo: "email check krni hn", isDone: false },
+//     {todo: "ghr jana hn", isDone: false },
+// ]
+
+// var todo = todos[1]
+// todo.isDone = true
+
+// console.log(todos)
+
+
+// // Immutable ko jab ham compare krte to ham value ko match krte hen jab ke match mein hum reference ko match krte hen.
+
+// var num1 = 10
+// var num2 = 10
+
+// console.log(num1 === num2);
+
+
+// var arr1 = ["1", "2", "3", "4"]
+// var arr2 = ["1", "2", "3", "4"]
+
+// console.log(arr1 === arr2);
+
+// var arr1 = ["1", "2", "3", "4"]
+// var arr2 = ["1", "2", "3", "4"]
+// var arr3 = arr2;
+
+// console.log(arr3 === arr2);
+
+
+
+
+/// local storage
+
+// simple string save krna
+// localStorage.setItem ("email" ,"marqum987@gmail.com")
+
+// // get data from local storage
+// var email = localStorage.getItem("email")
+// console.log(email)
+
+// var todos = ["bilal", "raza", "arqum", "tariq"]
+// var todosstring = JSON.stringify(todos)
+// localStorage.setItem("todos", todosstring)
+
+// var todos = localStorage.getItem("todos")
+//  todos = JSON.parse(todos)
+// console.log(todos)
+
+
+
+
+

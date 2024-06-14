@@ -1,113 +1,4 @@
-/* .box{
-    background-color: aqua;
-    height: 300px;
-    width: 700px;
-    margin: 0 auto; 
-
-}
-.colorbox{
-    height: 40px;
-    width: 40px;
-    margin: 10px;
-    cursor: pointer;
-}
-.sub-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-} */
-
-
-
-/* stop watch */
-
-/* h1 {
-    text-align: center;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-}
-
-.container .box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.box {
-    border: 1px solid black;
-    height: 100px;
-    width: 100px;
-    margin-left: 10px;
-    font-size: 40px;
-
-}
-
-.info_box{
-     border: 1px solid black;
-     margin-top: 20px;
-     height: 50px;
-     width: 150px;
-     display: flex;
-     justify-content: center;
-     margin-left: 20px;
-     text-align: center;
-     align-items: center;
-     
-}
-.msg{
-    justify-content: center;
-    text-align: center;
-} */
-
-
-
-
-
-
-/* Barqa Eid */
-
-/* h1{
-    justify-content: center;
-    text-align: center;
-}
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-.box{
-    background-color: black;
-    height: 100px;
-    width: 100px;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-size: 40px;
-    color: aliceblue;
-    display: flex;
-    flex-direction: column;
-}
-
-.head{
-    font-size: 20px;
-} */
-
-
-
-/*mutable and Immutable */
-
-
-
-/* local storage */
-
-/* *{
+*{
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
@@ -115,7 +6,7 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .wave{
@@ -144,6 +35,7 @@ body{
 .login-content{
 	display: flex;
 	justify-content: flex-start;
+    
 	align-items: center;
 	text-align: center;
 }
@@ -158,6 +50,8 @@ form{
 
 .login-content img{
     height: 100px;
+    margin-left: 33%;
+    border-radius: 50px;
 }
 
 .login-content h2{
@@ -328,27 +222,80 @@ a:hover{
 	.login-content{
 		justify-content: center;
 	}
-} */
+}
 
+.note-box {
+	border: 1px solid #ddd;
+	padding: 10px;
+	border-radius: 10px;
+	
+	overflow-wrap: break-word;
+	word-break: break-all;
+}
+  
+.note-content {
+	width: 50%; /* take up half of the available space */
+	padding: 10px;
+	border-right: 1px solid #ddd;
+} 
 
+  .note-box {
+	position: relative;
+}
+  
+  .button-group {
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+  
+.btn-edit {
+	font-size: 12px;
+	padding: 5px 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	background-color: #32be8f;
+	color: #fff;
+	margin-right: 10px;
+	width: 70px;
+	height: 40px;
 
+}
 
+  
+.btn-delete {
+	font-size: 12px;
+	padding: 5px 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	background-color: #FF0000;
+	color: #fff;
+	width: 70px;
+	height: 40px;
 
+}
 
+.note-time{
+	margin-right: 50px;
+	
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.logout{
+    border: 1px solid red;
+	padding: 5px;
+	background-color: #FF0000;
+	color: white;
+	border-radius: 5px;
+}
+  
+.center-email{
+	justify-content: center;
+	text-align: center;
+	margin-top: 20px;
+}
