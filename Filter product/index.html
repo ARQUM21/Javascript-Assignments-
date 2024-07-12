@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FILTERED</title>
+    <link rel="stylesheet" href="style.css" >
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+
+    
+    <div class="top">
+        <input type="text" placeholder="Name" id="name" />
+        <button class="btn" onclick="search()">Search</button>
+
+        <input type="number" placeholder="Price" id="price" />
+        <button class="btn" onclick="filterByPrice()">Price</button>
+    </div>
+
+                        
+    <div class="product-bt">
+        <button class="button" id="men-clothing-btn" onclick="mens()">Men's Clothing</button>
+        <button class="button" id="jewelery-btn" onclick="jew()">Jewelery</button>
+        <button class="button"  id="electronics-btn"  onclick="elec()">Electronics</button>
+        <button class="button" id="womens-clothing-btn" onclick="women()">Women's Clothing</button>
+    </div>
+    
+    
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div id="product_list"  class="flex flex-wrap -m-4"></div>
+      </div>
+    </section>
+
+    <script src="filter.js"></script>
+    
+  </body>
+</html>
