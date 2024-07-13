@@ -1,5 +1,16 @@
-const apiKey = '0a5d8f891d21022af9609451d92e1b9e'
+const formElement = document.querySelector(".search-form");
+const inputElement = document.querySelector(".city-input");
+const cityElement = document.querySelector(".city");
+const date = document.querySelector(".date");
+const descriptionIcon = document.querySelector(".description i");
+const descriptionText = document.querySelector(".description-text");
+const temperature = document.querySelector(".temp");
+const windSpeed = document.querySelector(".wind-speed");
+const humidity = document.querySelector(".humidity");
+const visibility = document.querySelector(".visibility-distance");
 
+
+const apiKey = '0a5d8f891d21022af9609451d92e1b9e'
 
 async function fetchWeatherData(city) {
     try {
@@ -23,27 +34,13 @@ async function fetchWeatherData(city) {
     }
 }
 
-const cityElement = document.querySelector(".city");
-const temperature = document.querySelector(".temp");
-const windSpeed = document.querySelector(".wind-speed");
-const humidity = document.querySelector(".humidity");
-const visibility = document.querySelector(".visibility-distance");
-
-const descriptionText = document.querySelector(".description-text");
-const date = document.querySelector(".date");
-const descriptionIcon = document.querySelector(".description i");
-
-fetchWeatherData();
+// fetchWeatherData();
 
 function updateWeatherUI(data) {
     cityElement.textContent = data.name;
-    if(response.cod === `404`){
-        cityElement.textContent = `City not found!`
-    
-    }
     temperature.textContent = `${Math.round(data.main.temp-273.15)}°C`;
     windSpeed.textContent = `${data.wind.speed} km/h`;
-    humidity.textContent = `${data.main.humidity}%`;
+    humidity.textContent = `${data.main.humidity} %`;
     visibility.textContent = `${data.visibility / 1000} km`;
     descriptionText.textContent = data.weather[0].description;
 
@@ -53,8 +50,7 @@ function updateWeatherUI(data) {
     descriptionIcon.innerHTML = `<i class="material-icons">${weatherIconName}</i>`;
 }
 
-const formElement = document.querySelector(".search-form");
-const inputElement = document.querySelector(".city-input");
+
 
 formElement.addEventListener("submit", function (e) {
     e.preventDefault();
@@ -82,3 +78,9 @@ function getWeatherIconName(weatherCondition) {
 
     return iconMap[weatherCondition] || "help";
 }
+
+
+
+
+
+
