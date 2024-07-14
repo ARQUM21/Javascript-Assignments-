@@ -41,7 +41,7 @@ function updateWeatherUI(data) {
     temperature.textContent = `${Math.round(data.main.temp-273.15)}°C`;
     windSpeed.textContent = `${data.wind.speed} km/h`;
     humidity.textContent = `${data.main.humidity} %`;
-    visibility.textContent = `${data.visibility / 1000} km`;
+    visibility.textContent = `${data.visibility /1000} km`;
     descriptionText.textContent = data.weather[0].description;
 
     const currentDate = new Date();
